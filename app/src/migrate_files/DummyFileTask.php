@@ -45,6 +45,9 @@ SQL;
         }
 
         DB::Query("DELETE IGNORE FROM `File`");
+        if (!array_key_exists('Filename', DB::field_list('File'))) {
+            DB::create_field('File', 'Filename', 'mediumtext AFTER `Title`');
+        }
         if (!empty($values)) {
             DB::prepared_query('INSERT INTO `File` VALUES ' . implode(',', $values), $parameters);
         }
