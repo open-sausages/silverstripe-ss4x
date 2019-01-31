@@ -24,7 +24,7 @@ class DummyFileTask extends BuildTask
      */
     public function run($request)
     {
-        static::clearFolder('../assets');
+        static::clearFolder(BASE_PATH . DIRECTORY_SEPARATOR . 'assets');
 
         $num = array_key_exists('numfiles', $request->getVars()) ?
             intval($request->getVar('numfiles')) :
@@ -32,7 +32,7 @@ class DummyFileTask extends BuildTask
         $values = [];
         $parameters = [];
         for ($i = 1; $i <= $num; $i++) {
-            copy("original.jpg", "../../../assets/hello{$i}.jpg");
+            copy(BASE_PATH . DIRECTORY_SEPARATOR . "original.jpg", BASE_PATH . DIRECTORY_SEPARATOR . "assets/hello{$i}.jpg");
 
             $values []= <<<SQL
 (NULL,'SilverStripe\\Assets\\Image','2019-01-17 14:24:25','2019-01-17 14:24:25',
