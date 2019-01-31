@@ -44,7 +44,7 @@ SQL;
             $parameters []= $i;
         }
 
-        DB::Query("DELETE FROM `File` WHERE `File`.`Filename` LIKE 'assets/hello%'");
+        DB::Query("DELETE IGNORE FROM `File`");
         if (!empty($values)) {
             DB::prepared_query('INSERT INTO `File` VALUES ' . implode(',', $values), $parameters);
         }
