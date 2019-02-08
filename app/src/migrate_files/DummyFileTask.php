@@ -5,17 +5,29 @@ use SilverStripe\ORM\DB;
 
 class DummyFileTask extends BuildTask
 {
-    const DEFAULT_NUM_FILES = 1000;
+    const DEFAULT_NUM_FILES = 100;
 
     private static $segment = 'DummyFileTask';
 
-    protected $title = 'Bulk create files';
+    protected $title = 'Dummy File Task';
 
     protected $description = "
         Creates files to be migrated using the MigrateFileTask.
         Use the numfiles parameter to override the number of files created. 
         Defaults to " . self::DEFAULT_NUM_FILES . " files.
     ";
+
+    const FILES = [
+        'original.jpg',
+        'picsum.jpg',
+        'picsum-1.jpg',
+        'picsum-2.jpg',
+    ];
+
+    private static function getNewFileName($original, $i)
+    {
+        return $i . '-' . $original;
+    }
 
     /**
      * Removes existing files and creates new ones ready to be migrated.
@@ -30,18 +42,17 @@ class DummyFileTask extends BuildTask
             intval($request->getVar('numfiles')) :
             self::DEFAULT_NUM_FILES;
         $values = [];
-        $parameters = [];
         for ($i = 1; $i <= $num; $i++) {
-            copy(BASE_PATH . DIRECTORY_SEPARATOR . "original.jpg", PUBLIC_PATH . DIRECTORY_SEPARATOR . "assets/hello{$i}.jpg");
+            $original = self::FILES[array_rand(self::FILES)];
+            $file = self::getNewFileName($original, $i);
+
+            copy(BASE_PATH . DIRECTORY_SEPARATOR . $original, PUBLIC_PATH . DIRECTORY_SEPARATOR . "assets/".$file);
 
             $values []= <<<SQL
 (NULL,'SilverStripe\\Assets\\Image','2019-01-17 14:24:25','2019-01-17 14:24:25',
-CONCAT('hello',?,'.jpg'),CONCAT('hello',?,'.jpg'),CONCAT('assets/hello',?,'.jpg'),
+'{$file}','{$file}','assets/{$file}',
 NULL,1,0,0,0,'Inherit','Inherit',NULL,NULL,NULL,0,0,0)
 SQL;
-            $parameters []= $i;
-            $parameters []= $i;
-            $parameters []= $i;
         }
 
         DB::query("DROP TABLE IF EXISTS `File`");
@@ -79,7 +90,7 @@ CREATE TABLE `File` (
 SQL
         );
         if (!empty($values)) {
-            DB::prepared_query('INSERT INTO `File` VALUES ' . implode(',', $values), $parameters);
+            DB::query('INSERT INTO `File` VALUES ' . implode(',', $values));
         }
     }
 
@@ -87,7 +98,9 @@ SQL
     {
         $files = glob($folder . "/*");
         foreach ($files as $file) {
-            unlink($file);
+            if (!is_dir($file)) {
+                unlink($file);
+            }
         }
     }
 }
