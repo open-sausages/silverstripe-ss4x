@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e84e660fe95841bdaaf2a9b10634a6b",
+    "content-hash": "c87960238fbf1a820284a2328ffb62ad",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1616,17 +1616,11 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "4.x-dev",
+            "version": "dev-pulls/4/ss-2018-022",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "761d4d877e99d937a98f4dfb573f77830931a5f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/761d4d877e99d937a98f4dfb573f77830931a5f0",
-                "reference": "761d4d877e99d937a98f4dfb573f77830931a5f0",
-                "shasum": ""
+                "url": "git@github.com:/silverstripe-security/silverstripe-framework",
+                "reference": "576c8c2a9e4220ca10c980428a9592dd3f2a9d15"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -1706,12 +1700,22 @@
                     "src/includes/constants.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "include-path": [
                 "src/",
                 "src/includes/",
                 "thirdparty/"
             ],
+            "scripts": {
+                "lint": [
+                    "phpcs src/ tests/php/ tests/behat/src/"
+                ],
+                "lint-clean": [
+                    "phpcbf src/ tests/php/ tests/behat/src/"
+                ],
+                "php-peg": [
+                    "php thirdparty/php-peg/cli.php src/View/SSTemplateParser.peg > src/View/SSTemplateParser.php"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1731,7 +1735,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2019-04-08 21:01:33"
+            "time": "2019-03-31 20:15:16"
         },
         {
             "name": "silverstripe/graphql",
@@ -3702,6 +3706,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-06-30T09:13:00+00:00"
         },
         {
@@ -4269,10 +4274,18 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "4.4.x-dev",
+            "alias_normalized": "4.4.9999999.9999999-dev",
+            "version": "dev-pulls/4/ss-2018-022",
+            "package": "silverstripe/framework"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 20
+        "silverstripe/recipe-cms": 20,
+        "silverstripe/framework": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
