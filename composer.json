@@ -8,7 +8,7 @@
         "silverstripe/recipe-cms": "4.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
         "symbiote/silverstripe-queuedjobs": "^4.3",
-        "silverstripe/framework": "dev-pulls/4/ss-2018-022 as 4.4.x-dev"
+        "dnadesign/silverstripe-elemental": "dev-pulls/4/ticken-the-insert-here-line as 4.2.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
@@ -33,9 +33,9 @@
         "process-timeout": 600
     },
     "repositories": {
-        "silverstripe/framework": {
+        "dnadesign/silverstripe-elemental": {
             "type": "vcs",
-            "url": "git@github.com:/silverstripe-security/silverstripe-framework"
+            "url": "git@github.com:/open-sausages/silverstripe-elemental"
         }
     },
     "prefer-stable": true,
