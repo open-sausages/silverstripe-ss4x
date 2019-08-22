@@ -42,16 +42,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.109.8",
+            "version": "3.110.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a7948d0de42185cb1af551713a0e99ad593fd962"
+                "reference": "39094b2d8e0424184fe9f12f5359d62ce8849b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a7948d0de42185cb1af551713a0e99ad593fd962",
-                "reference": "a7948d0de42185cb1af551713a0e99ad593fd962",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/39094b2d8e0424184fe9f12f5359d62ce8849b9d",
+                "reference": "39094b2d8e0424184fe9f12f5359d62ce8849b9d",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-08-20T18:42:25+00:00"
+            "time": "2019-08-21T18:23:39+00:00"
         },
         {
             "name": "bramus/ansi-php",
@@ -389,7 +389,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:/open-sausages/silverstripe-elemental",
-                "reference": "ffab8e1d4386b4bde28f63de2df760cb6e722333"
+                "reference": "953b6d96283883c542f630b718dbc90b448e72cf"
             },
             "require": {
                 "silverstripe/admin": "^1.4@dev",
@@ -440,7 +440,7 @@
                 "elemental",
                 "silverstripe"
             ],
-            "time": "2019-08-21T03:59:16+00:00"
+            "time": "2019-08-22T04:01:27+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1978,12 +1978,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "3990fb163ca50ecdfc328bff4538d5eb50b55d59"
+                "reference": "abf026c500490af6452fee85e2add593d008bd4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/3990fb163ca50ecdfc328bff4538d5eb50b55d59",
-                "reference": "3990fb163ca50ecdfc328bff4538d5eb50b55d59",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/abf026c500490af6452fee85e2add593d008bd4a",
+                "reference": "abf026c500490af6452fee85e2add593d008bd4a",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2035,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2019-08-20T22:24:45+00:00"
+            "time": "2019-08-22T02:09:11+00:00"
         },
         {
             "name": "silverstripe/config",
