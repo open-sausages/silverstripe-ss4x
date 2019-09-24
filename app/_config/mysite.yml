@@ -3,5 +3,3 @@ Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
-Symbiote\QueuedJobs\Controllers\QueuedJobsAdmin:
-  max_finished_jobs_age: 9999999
