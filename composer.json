@@ -8,7 +8,7 @@
         "silverstripe/recipe-cms": "4.x-dev",
         "silverstripe-themes/simple": "~3.2.0",
         "symbiote/silverstripe-queuedjobs": "^4.3",
-        "dnadesign/silverstripe-elemental": "dev-pulls/4/ticken-the-insert-here-line as 4.2.x-dev",
+        "dnadesign/silverstripe-elemental": "4.x-dev",
         "silverstripe/crontask": "^2.1",
         "silverstripe/dynamodb": "^4.0"
     },
@@ -34,12 +34,7 @@
     "config": {
         "process-timeout": 600
     },
-    "repositories": {
-        "dnadesign/silverstripe-elemental": {
-            "type": "vcs",
-            "url": "git@github.com:/open-sausages/silverstripe-elemental"
-        }
-    },
+    "repositories": [],
     "prefer-stable": true,
     "minimum-stability": "dev"
 }
