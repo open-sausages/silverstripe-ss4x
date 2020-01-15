@@ -90,16 +90,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.5",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
-                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/47fe531de31fca4a1b997f87308e7d7804348f7e",
+                "reference": "47fe531de31fca4a1b997f87308e7d7804348f7e",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-12-11T14:44:42+00:00"
+            "time": "2020-01-13T10:02:55+00:00"
         },
         {
             "name": "composer/installers",
@@ -1237,12 +1237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-sausages/silverstripe-asset-admin.git",
-                "reference": "2740b5d6add4dbfdeb6e3ebf88fd2bfc82c89a46"
+                "reference": "14eec11feb45f8b018511679837452b70b259e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/2740b5d6add4dbfdeb6e3ebf88fd2bfc82c89a46",
-                "reference": "2740b5d6add4dbfdeb6e3ebf88fd2bfc82c89a46",
+                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/14eec11feb45f8b018511679837452b70b259e86",
+                "reference": "14eec11feb45f8b018511679837452b70b259e86",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
             "support": {
                 "source": "https://github.com/open-sausages/silverstripe-asset-admin/tree/pulls/1/in-modal-editing"
             },
-            "time": "2020-01-13T02:10:00+00:00"
+            "time": "2020-01-15T02:42:37+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -1567,12 +1567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "547ac6f2ce3870611ed60a2b8ce18ab7a8808005"
+                "reference": "acbbf80d142df2f703a91702e9dd064fd50f2cd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/547ac6f2ce3870611ed60a2b8ce18ab7a8808005",
-                "reference": "547ac6f2ce3870611ed60a2b8ce18ab7a8808005",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/acbbf80d142df2f703a91702e9dd064fd50f2cd8",
+                "reference": "acbbf80d142df2f703a91702e9dd064fd50f2cd8",
                 "shasum": ""
             },
             "require": {
@@ -1675,7 +1675,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-01-12T22:49:21+00:00"
+            "time": "2020-01-15T01:24:49+00:00"
         },
         {
             "name": "silverstripe/graphql",
