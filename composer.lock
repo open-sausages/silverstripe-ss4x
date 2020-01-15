@@ -1237,12 +1237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-sausages/silverstripe-asset-admin.git",
-                "reference": "14eec11feb45f8b018511679837452b70b259e86"
+                "reference": "22ab89024bee31610ab949cf60b4ed24aea37af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/14eec11feb45f8b018511679837452b70b259e86",
-                "reference": "14eec11feb45f8b018511679837452b70b259e86",
+                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/22ab89024bee31610ab949cf60b4ed24aea37af2",
+                "reference": "22ab89024bee31610ab949cf60b4ed24aea37af2",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
             "support": {
                 "source": "https://github.com/open-sausages/silverstripe-asset-admin/tree/pulls/1/in-modal-editing"
             },
-            "time": "2020-01-15T02:42:37+00:00"
+            "time": "2020-01-15T22:55:37+00:00"
         },
         {
             "name": "silverstripe/assets",
