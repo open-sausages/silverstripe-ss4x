@@ -1237,12 +1237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-sausages/silverstripe-asset-admin.git",
-                "reference": "22ab89024bee31610ab949cf60b4ed24aea37af2"
+                "reference": "6b8de982ae680455ddc15e2453167e531404482c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/22ab89024bee31610ab949cf60b4ed24aea37af2",
-                "reference": "22ab89024bee31610ab949cf60b4ed24aea37af2",
+                "url": "https://api.github.com/repos/open-sausages/silverstripe-asset-admin/zipball/6b8de982ae680455ddc15e2453167e531404482c",
+                "reference": "6b8de982ae680455ddc15e2453167e531404482c",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
             "support": {
                 "source": "https://github.com/open-sausages/silverstripe-asset-admin/tree/pulls/1/in-modal-editing"
             },
-            "time": "2020-01-15T22:55:37+00:00"
+            "time": "2020-01-18T11:43:33+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -1293,12 +1293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-assets.git",
-                "reference": "75e1ad40d4735fe79505fe36fb3f880a9f790dc0"
+                "reference": "42f446e972b00b238ad1f78df1d7e71ad49fa29b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/75e1ad40d4735fe79505fe36fb3f880a9f790dc0",
-                "reference": "75e1ad40d4735fe79505fe36fb3f880a9f790dc0",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-assets/zipball/42f446e972b00b238ad1f78df1d7e71ad49fa29b",
+                "reference": "42f446e972b00b238ad1f78df1d7e71ad49fa29b",
                 "shasum": ""
             },
             "require": {
@@ -1343,7 +1343,7 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2019-12-10T00:51:15+00:00"
+            "time": "2020-01-17T20:32:15+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -1567,12 +1567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "acbbf80d142df2f703a91702e9dd064fd50f2cd8"
+                "reference": "4121099484b56a974847a187319b34cd813304d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/acbbf80d142df2f703a91702e9dd064fd50f2cd8",
-                "reference": "acbbf80d142df2f703a91702e9dd064fd50f2cd8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/4121099484b56a974847a187319b34cd813304d7",
+                "reference": "4121099484b56a974847a187319b34cd813304d7",
                 "shasum": ""
             },
             "require": {
@@ -1675,7 +1675,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2020-01-15T01:24:49+00:00"
+            "time": "2020-01-17T04:00:02+00:00"
         },
         {
             "name": "silverstripe/graphql",
@@ -2805,16 +2805,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.4",
+            "version": "1.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7"
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/579bb7356d91f9456ccd505f24ca8b667966a0a7",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/b2c28789e80a97badd14145fda39b545d83ca3ef",
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef",
                 "shasum": ""
             },
             "require": {
@@ -2849,7 +2849,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-12-15T19:12:40+00:00"
+            "time": "2020-01-17T21:11:47+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
